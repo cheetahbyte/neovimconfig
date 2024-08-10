@@ -18,15 +18,22 @@ end
 bootstrap_pckr()
 
 require("pckr").add({
-	{"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"},
-	"IogaMaster/neocord",
-	{"catppuccin/nvim", as = "catppuccin"},
-	"jiangmiao/auto-pairs",
-	{"kdheepak/lazygit.nvim", requires = "nvim-lua/plenary.nvim"},
-	{"nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim"},
+    {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"},
+    "IogaMaster/neocord",
+    {"catppuccin/nvim", as = "catppuccin"},
+    "jiangmiao/auto-pairs",
+    {"kdheepak/lazygit.nvim", requires = "nvim-lua/plenary.nvim"},
+    {"nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim"},
+    {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
+    {'neovim/nvim-lspconfig'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/nvim-cmp'},
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim"
 })
 
 
 
 require("plugins")
 require("theme")
+
